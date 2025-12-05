@@ -13,6 +13,7 @@ const renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
 //we also need to set the size at which we want it to render our app
 document.body.appendChild(renderer.domElement);
+//añade el canvas al DOM que three crea internamente en renderer
 
 const geometry = new THREE.BoxGeometry(1, 1, 1);
 const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
